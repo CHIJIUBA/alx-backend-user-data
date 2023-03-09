@@ -14,12 +14,10 @@ class Auth():
         """
         return False
 
-
     def authorization_header(self, request=None) -> str:
         """ requires the given auth header
         """
         return None
-
 
     def current_user(self, request=None) -> TypeVar('User'):
         """ requires the given auth user
