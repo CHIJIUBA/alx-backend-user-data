@@ -20,11 +20,13 @@ if auth_type:
     from api.v1.auth.auth import Auth
     auth = Auth()
 
+
 @app.errorhandler(404)
 def not_found(error) -> str:
     """ Not found handler
     """
     return jsonify({"error": "Not found"}), 404
+
 
 @app.before_request
 def before_request():
